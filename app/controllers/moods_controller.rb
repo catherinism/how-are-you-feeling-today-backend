@@ -1,10 +1,12 @@
 class MoodsController < ApplicationController
     def index
         @moods = Mood.all
+        render json: @moods
     end
 
-    def 
+    def show
         @moods = Mood.find_by(id: params[:id])
+        render json: @moods
     end
 
 end

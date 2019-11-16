@@ -6,6 +6,17 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+#create users
+
 20.times do
     User.create(name: Faker::Name.name)
 end
+
+#create moods
+Mood.create(feeling: "Meh")
+Mood.create(feeling: "Good")
+Mood.create(feeling: "Great")
+
+#create quotes
+
+
